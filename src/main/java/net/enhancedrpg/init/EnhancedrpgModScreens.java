@@ -1,6 +1,6 @@
 
 /*
- *	MCreator note: This file will be REGENERATED on each build.
+ *	This file will be REGENERATED on each build.
  */
 package net.mcreator.enhancedrpg.init;
 

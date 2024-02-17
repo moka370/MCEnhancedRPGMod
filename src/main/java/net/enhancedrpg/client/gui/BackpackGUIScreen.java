@@ -20,6 +20,7 @@ public class BackpackGUIScreen extends AbstractContainerScreen<BackpackGUIMenu> 
 	private final int x, y, z;
 	private final Player entity;
 
+	// Constructor for the backpack GUI
 	public BackpackGUIScreen(BackpackGUIMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
 		this.world = container.world;
@@ -36,8 +37,10 @@ public class BackpackGUIScreen extends AbstractContainerScreen<BackpackGUIMenu> 
 		return true;
 	}
 
+	// location for the texture resource for the backpack GUI
 	private static final ResourceLocation texture = new ResourceLocation("enhancedrpg:textures/screens/backpack_gui.png");
 
+	// render the backpack and GUI components
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
@@ -45,6 +48,7 @@ public class BackpackGUIScreen extends AbstractContainerScreen<BackpackGUIMenu> 
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
 	}
 
+	// render the background texture
 	@Override
 	protected void renderBg(GuiGraphics guiGraphics, float partialTicks, int gx, int gy) {
 		RenderSystem.setShaderColor(1, 1, 1, 1);
@@ -56,6 +60,7 @@ public class BackpackGUIScreen extends AbstractContainerScreen<BackpackGUIMenu> 
 
 	@Override
 	public boolean keyPressed(int key, int b, int c) {
+		// closes backpack GUI if escape key is pressed
 		if (key == 256) {
 			this.minecraft.player.closeContainer();
 			return true;
@@ -68,17 +73,20 @@ public class BackpackGUIScreen extends AbstractContainerScreen<BackpackGUIMenu> 
 		super.containerTick();
 	}
 
+	// renders the labels for the backpack GUI
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.enhancedrpg.backpack_gui.label_backpack"), 8, 7, -10066330, false);
 		guiGraphics.drawString(this.font, Component.translatable("gui.enhancedrpg.backpack_gui.label_inventory"), 7, 84, -10066330, false);
 	}
-
+	
+	// handles actions when GUI is closes
 	@Override
 	public void onClose() {
 		super.onClose();
 	}
 
+	// initializes GUI components
 	@Override
 	public void init() {
 		super.init();

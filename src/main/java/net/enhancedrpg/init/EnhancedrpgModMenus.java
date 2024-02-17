@@ -1,8 +1,8 @@
 
 /*
- *	MCreator note: This file will be REGENERATED on each build.
+ *	This file will be REGENERATED on each build.
  */
-package net.mcreator.enhancedrpg.init;
+package net.enhancedrpg.init;
 
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
