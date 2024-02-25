@@ -1,4 +1,4 @@
-package net.mcreator.enhancedrpg.client.gui;
+package net.enhancedrpg.client.gui;
 
 import net.minecraft.world.level.Level;
 import net.minecraft.world.entity.player.Player;
@@ -8,7 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
-import net.mcreator.enhancedrpg.world.inventory.BackpackGUIMenu;
+import net.enhancedrpg.world.inventory.BackpackGUIMenu;
 
 import java.util.HashMap;
 

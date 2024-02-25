@@ -1,5 +1,5 @@
 
-package net.mcreator.enhancedrpg.world.inventory;
+package net.enhancedrpg.world.inventory;
 
 import net.minecraftforge.items.SlotItemHandler;
 import net.minecraftforge.items.ItemStackHandler;
@@ -19,31 +19,44 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.enhancedrpg.init.EnhancedrpgModMenus;
+import net.enhancedrpg.init.EnhancedrpgModMenus;
 
 import java.util.function.Supplier;
 import java.util.Map;
 import java.util.HashMap;
 
 public class BackpackGUIMenu extends AbstractContainerMenu implements Supplier<Map<Integer, Slot>> {
+    // HashMap for GUI state
 	public final static HashMap<String, Object> guistate = new HashMap<>();
+    // Fields for world, entity, and position
 	public final Level world;
 	public final Player entity;
 	public int x, y, z;
+    // ContainerLevelAccess for GUI access
 	private ContainerLevelAccess access = ContainerLevelAccess.NULL;
+    // IItemHandler for internal inventory
 	private IItemHandler internal;
+    // Map for custom slots
 	private final Map<Integer, Slot> customSlots = new HashMap<>();
+    // Flag indicating if the GUI is bound
 	private boolean bound = false;
+    // Supplier for item matching
 	private Supplier<Boolean> boundItemMatcher = null;
+    // Entities bound to the GUI
 	private Entity boundEntity = null;
 	private BlockEntity boundBlockEntity = null;
 
+    // Constructor for BackpackGUIMenu
 	public BackpackGUIMenu(int id, Inventory inv, FriendlyByteBuf extraData) {
 		super(EnhancedrpgModMenus.BACKPACK_GUI.get(), id);
+        // Set world and entity fields
 		this.entity = inv.player;
 		this.world = inv.player.level();
+        // Initialize internal inventory
 		this.internal = new ItemStackHandler(18);
 		BlockPos pos = null;
+		
+        // Read extraData for position information
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
 			this.x = pos.getX();
@@ -51,6 +64,7 @@ public class BackpackGUIMenu extends AbstractContainerMenu implements Supplier<M
 			this.z = pos.getZ();
 			access = ContainerLevelAccess.create(world, pos);
 		}
+        // Handle binding to item, entity, or block
 		if (pos != null) {
 			if (extraData.readableBytes() == 1) { // bound to item
 				byte hand = extraData.readByte();
@@ -77,6 +91,8 @@ public class BackpackGUIMenu extends AbstractContainerMenu implements Supplier<M
 					});
 			}
 		}
+		
+        // Initialize custom slots
 		this.customSlots.put(0, this.addSlot(new SlotItemHandler(internal, 0, 8, 22) {
 			private final int slot = 0;
 		}));
@@ -131,6 +147,8 @@ public class BackpackGUIMenu extends AbstractContainerMenu implements Supplier<M
 		this.customSlots.put(17, this.addSlot(new SlotItemHandler(internal, 17, 152, 40) {
 			private final int slot = 17;
 		}));
+		
+        // Add player inventory slots
 		for (int si = 0; si < 3; ++si)
 			for (int sj = 0; sj < 9; ++sj)
 				this.addSlot(new Slot(inv, sj + (si + 1) * 9, 1 + 8 + sj * 18, 23 + 84 + si * 18));
