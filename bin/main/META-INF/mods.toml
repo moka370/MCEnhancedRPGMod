@@ -6,8 +6,9 @@ license="Academic Free License v3.0"
 modId="enhancedrpg"
 version="1.0.0"
 displayName="EnhancedRPG"
-displayURL="https://github.com/moka370/MCEnhancedRPGMod"
-authors="Jocelyn Ramming"
+displayURL="https://mcreator.net"
+credits="Created using mod maker MCreator - https://mcreator.net/about"
+authors="jocel, MCreator"
 
 [[dependencies.enhancedrpg]]
     modId="minecraft"
