@@ -1,0 +1,151 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 216,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_tool_enchantments",
+          "text": {
+            "fixedValue": "Tool Enchantments"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_10",
+          "text": {
+            "fixedValue": "Level 15: Basic Upgrades"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 174
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_20",
+          "text": {
+            "fixedValue": "Level 20: Fishing Upgrades"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 140
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_30",
+          "text": {
+            "fixedValue": "Level 30: Unique Upgrades"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 114,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_must_be_at_level_for_enchant_cat",
+          "text": {
+            "fixedValue": "Must be at level for enchant category"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 116,
+          "y": 62
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenBasicTool"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel15"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 258,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenFishing"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel20"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 258,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenUniqueTool"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel30"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 258,
+          "y": 98
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

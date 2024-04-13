@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+
+
+[[mods]]
+modId="enhancedrpg"
+version="1.0.0"
+displayName="EnhancedRPG"
+displayURL="https://github.com/moka370/MCEnhancedRPGMod"
+authors="Jocelyn Ramming"
+description=""
+
+[[dependencies.enhancedrpg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

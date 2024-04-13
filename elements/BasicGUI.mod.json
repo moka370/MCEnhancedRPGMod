@@ -1,0 +1,142 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ranged_basic_bow_enchants",
+          "text": {
+            "fixedValue": "Ranged Basic Bow Enchants"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 46
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cost_5_levels_per_enchant",
+          "text": {
+            "fixedValue": "Cost: 5 levels per enchant"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 146,
+          "y": 58
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_piercing",
+          "text": {
+            "fixedValue": "Piercing"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 166
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_power",
+          "text": {
+            "fixedValue": "Power"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 129
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_punch",
+          "text": {
+            "fixedValue": "Punch"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 93
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenPiercing"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 231,
+          "y": 161
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenPower"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 231,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenPunch"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 231,
+          "y": 89
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

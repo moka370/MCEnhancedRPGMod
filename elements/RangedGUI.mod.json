@@ -1,0 +1,151 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 210,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_ranged_weapon_enchantments",
+          "text": {
+            "fixedValue": "Ranged Weapon Enchantments"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 146,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_10_basic_bow",
+          "text": {
+            "fixedValue": "Level 15: Basic Bow"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 173
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_20_advanced_bows",
+          "text": {
+            "fixedValue": "Level 20: Advanced Bow"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 138
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_level_30_trident",
+          "text": {
+            "fixedValue": "Level 30: Trident"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 124,
+          "y": 103
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenBasic"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel15"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenAdvanced"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel20"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 134
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenTrident"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel30"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_must_be_at_level_for_enchant_cat",
+          "text": {
+            "fixedValue": "Must be at level for enchant category"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 117,
+          "y": 63
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

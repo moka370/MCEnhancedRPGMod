@@ -1,0 +1,151 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 235,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meelee_weapon_enchantments",
+          "text": {
+            "fixedValue": "Meelee Weapon Enchantments"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 149,
+          "y": 47
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_mob_damage",
+          "text": {
+            "fixedValue": "Level 15: Mob Damage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 104,
+          "y": 175
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_special_effect",
+          "text": {
+            "fixedValue": "Level 30: Unique Damage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 84
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_increased_damage",
+          "text": {
+            "fixedValue": "Level 20: Increased Damage"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 105,
+          "y": 129
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenUnique"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel30"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 267,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenIncreased"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel20"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 267,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenMob"
+          },
+          "displayCondition": {
+            "name": "VerifyLevel15"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 267,
+          "y": 170
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_must_be_at_level_for_enchant_cat",
+          "text": {
+            "fixedValue": "Must be at level for enchant category"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 116,
+          "y": 58
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

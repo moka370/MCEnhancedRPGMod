@@ -1,0 +1,202 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 213,
+    "height": 174,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_armor_protection_enchants",
+          "text": {
+            "fixedValue": "Armor Protection Enchants"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 151,
+          "y": 38
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_blast_protection",
+          "text": {
+            "fixedValue": "Blast Protection"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 121,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_fire_protection",
+          "text": {
+            "fixedValue": "Fire Protection"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 130
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_projectile_protection",
+          "text": {
+            "fixedValue": "Projectile Protection"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 121,
+          "y": 75
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_protection",
+          "text": {
+            "fixedValue": "Protection"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 156
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_thorns",
+          "text": {
+            "fixedValue": "Thorns"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 120,
+          "y": 182
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_each_enchant_costs_5_levels",
+          "text": {
+            "fixedValue": "Cost: 5 levels per enchant"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 148,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenProjectProc"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenBlastProc"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 98
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenFireProc"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select3",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenProtection"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 152
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select4",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenThorns"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 179
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

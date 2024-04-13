@@ -1,0 +1,142 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 213,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_meelee_mob_damage_enchants",
+          "text": {
+            "fixedValue": "Meelee Weapon Mob Damage Enchants"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 128,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_cost_5_levels_per_enchant",
+          "text": {
+            "fixedValue": "Cost: 5 levels per enchant"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 145,
+          "y": 59
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bane_of_arthropods",
+          "text": {
+            "fixedValue": "Bane of Arthropods"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 177
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_impaling",
+          "text": {
+            "fixedValue": "Impaling"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 132
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_smite",
+          "text": {
+            "fixedValue": "Smite"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 123,
+          "y": 86
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenSmite"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 80
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select1",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenImpaling"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 125
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_select2",
+          "text": "Select",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenBaneArthro"
+          },
+          "width": 56,
+          "height": 20,
+          "x": 249,
+          "y": 170
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

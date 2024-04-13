@@ -1,0 +1,22 @@
+modLoader="javafml"
+loaderVersion="[47,)"
+license="Academic Free License v3.0"
+
+[[mods]]
+modId="enhancedrpg"
+version="1.0.0"
+displayName="EnhancedRPG"
+displayURL="https://github.com/moka370/MCEnhancedRPGMod"
+authors="Jocelyn Ramming"
+description="The Minecraft Enhanced RPG Mod takes features in the game, such as villagers, enchanting, and inventory, and expands and improves upon them. You will no longer run out of inventory space with the new upgradable backpack. Enchanting is a lot more in depth with a new skill tree and learned enchantments. Villagers are a lot more useful as you can befriend them to get trade discounts and rare items. Explore Minecraft the way it was meant to be."
+
+[[dependencies.enhancedrpg]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.20.1]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

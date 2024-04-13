@@ -1,0 +1,112 @@
+{
+  "_fv": 57,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "button",
+        "data": {
+          "name": "button_lower",
+          "text": "Tools",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenTool"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 141,
+          "y": 170
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_ranged_weapons",
+          "text": "Ranged Weapons",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenRanged"
+          },
+          "width": 98,
+          "height": 20,
+          "x": 141,
+          "y": 89
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_melee_weapons",
+          "text": "Melee Weapons",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenMeelee"
+          },
+          "width": 93,
+          "height": 20,
+          "x": 141,
+          "y": 116
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_armor",
+          "text": "Armor",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "OpenArmor"
+          },
+          "width": 51,
+          "height": 20,
+          "x": 141,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_enchantment_skill_tree",
+          "text": {
+            "fixedValue": "Enchantment Skill Tree"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 159,
+          "y": 44
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_select_a_category",
+          "text": {
+            "fixedValue": "Select a category:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 141,
+          "y": 64
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}
